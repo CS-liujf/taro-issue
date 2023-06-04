@@ -1,6 +1,7 @@
 export default defineAppConfig({
   pages: [
-    'pages/tabs/index/index'
+    'pages/tabs/loading',
+    'pages/tabs/tabBar'
   ],
   window: {
     backgroundTextStyle: 'light',
