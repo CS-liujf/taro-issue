@@ -17,16 +17,17 @@ onMounted(() => {
 })
 </script>
 
-<style>
+<style module>
 .loading-container {
-    height: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgb(240, 255, 252);
 }
 
 .loader7 {
+    margin-top: 50%;
     transform: scale(0.7);
     width: 600rpx;
     position: relative;
