@@ -1,6 +1,6 @@
 <template>
-    <view class="loading-container">
-        <view class="loader7">
+    <view :class="$style['loading-container']">
+        <view :class="$style.loader7">
             <view style="--i:1;--color:#82af77"></view>
             <view style="--i:2;--color:#39b3d8"></view>
             <view style="--i:3;--color:#416937"></view>
@@ -13,7 +13,7 @@
 import { onMounted } from 'vue';
 import Taro from '@tarojs/taro'
 onMounted(() => {
-    setTimeout(() => Taro.reLaunch({ url: '/pages/tabs/tabBar' }), 3000)
+    setTimeout(() => Taro.reLaunch({ url: '/pages/vue-router/index' }), 3000)
 })
 </script>
 
@@ -27,7 +27,7 @@ onMounted(() => {
 }
 
 .loader7 {
-    margin-top: 50%;
+    margin-top: 60%;
     transform: scale(0.7);
     width: 600rpx;
     position: relative;

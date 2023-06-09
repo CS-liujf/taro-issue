@@ -1,7 +1,8 @@
 export default defineAppConfig({
   pages: [
+    'pages/vue-router/index',
     'pages/tabs/loading',
-    'pages/tabs/tabBar'
+    'pages/temp/index'
   ],
   window: {
     backgroundTextStyle: 'light',
