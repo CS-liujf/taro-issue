@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-// import tabBar from '@/pages/vue-router/index.vue';
-// import index from '@/pages/vue-router/views/index/index.vue';
-// import profile from '@/pages/vue-router/views/me/index.vue';
-import tabBar from '@/pages/tabs/tabBar.vue';
-import index from '@/pages/tabs/index/index.vue';
-import me from '@/pages/tabs/profile/index.vue';
+import tabBar from '@/pages/vue-router/index.vue';
+import index from '@/pages/vue-router/views/index/index.vue';
+import me from '@/pages/vue-router/views/me/index.vue';
+// import tabBar from '@/pages/tabs/tabBar.vue';
+// import index from '@/pages/tabs/index/index.vue';
+// import me from '@/pages/tabs/profile/index.vue';
 import { App } from 'vue';
 
 const routes: Array<RouteRecordRaw> = [

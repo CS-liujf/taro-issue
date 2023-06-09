@@ -1,7 +1,7 @@
 <template>
   <view>
     <navigation></navigation>
-    <!-- <router-view></router-view> -->
+    <router-view></router-view>
     <nut-tabbar :bottom="true" @tab-switch="tabSwitch">
       <nut-tabbar-item tab-title="标签" :icon="Home"></nut-tabbar-item>
       <nut-tabbar-item tab-title="标签" :icon="My"></nut-tabbar-item>

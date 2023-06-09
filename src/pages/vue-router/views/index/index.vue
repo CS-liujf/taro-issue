@@ -12,15 +12,17 @@
 <script lang="ts" setup>
 import Taro from '@tarojs/taro'
 import { useLayoutStore } from '@/store/store_modules/layoutInfo';
+import { computed } from 'vue';
 const func = () => {
   console.log('dianjile')
   Taro.navigateTo({ url: '/pages/temp/index' })
 }
 const layoutStore = useLayoutStore()
+const navHeight = computed(() => layoutStore.navHeight + 'px')
 </script>
 
 <style lang="css" module>
 .contentContainer {
-  margin-top: v-bind(layoutStore.navHeight + 'px');
+  margin-top: v-bind(navHeight);
 }
 </style>
